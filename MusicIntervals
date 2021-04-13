@@ -92,7 +92,7 @@ public class MusicIntervals {
          }
       
       int difference1 = (note1_val - note2_val);
-      int difference2 = (note2_val - note1_val);
+      
       
       
       if (Math.abs(difference1) == 0) {
