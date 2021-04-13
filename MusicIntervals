@@ -1,0 +1,138 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class MusicIntervals {
+
+   public static void main(String[] args) {
+   
+   
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter a note: ");
+      String note1 = sc.nextLine();
+      
+      int note1_val= 0;
+      int note2_val= 0;
+      
+      if ((note1.equals("C")) || (note1.equals("B#"))) {
+         note1_val = 0;
+        }
+      if ((note1.equals("C#")) || (note1.equals("Db"))) {
+         note1_val = 1;
+         }
+      if (note1.equals("D")) {
+         note1_val = 2;
+         }
+      if ((note1.equals("D#")) || (note1.equals("Eb"))) {
+         note1_val = 3;
+         }
+      if ((note1.equals("E")) || (note1.equals("Fb"))) {
+         note1_val = 4;
+         }
+      if ((note1.equals("F")) || (note1.equals("E#"))) {
+         note1_val = 5;
+         }
+      if ((note1.equals("F#")) || (note1.equals("Gb"))) {
+         note1_val = 6;
+         }
+      if (note1.equals("G")) {
+         note1_val = 7;
+         }
+      if ((note1.equals("G#")) || (note1.equals("Ab"))) {
+         note1_val = 8;
+         }
+      if (note1.equals("A")) {
+         note1_val = 9;
+         }
+      if ((note1.equals("A#")) || (note1.equals("Bb"))) {
+         note1_val = 10;
+         }
+      if ((note1.equals("B")) || (note1.equals("Cb"))) {
+         note1_val = 11;
+         }
+      
+      
+      System.out.print("Enter another note: ");
+      String note2 = sc.nextLine();
+      
+      if ((note2.equals("C")) || (note2.equals("B#"))) {
+         note2_val = 0;
+        }
+      if ((note2.equals("C#")) || (note2.equals("Db"))) {
+         note2_val = 1;
+         }
+      if (note2.equals("D")) {
+         note2_val = 2;
+         }
+      if ((note2.equals("D#")) || (note2.equals("Eb"))) {
+         note2_val = 3;
+         }
+      if ((note2.equals("E")) || (note2.equals("Fb"))) {
+         note2_val = 4;
+         }
+      if ((note2.equals("F")) || (note2.equals("E#"))) {
+         note2_val = 5;
+         }
+      if ((note2.equals("F#")) || (note2.equals("Gb"))) {
+         note2_val = 6;
+         }
+      if (note2.equals("G")) {
+         note2_val = 7;
+         }
+      if ((note2.equals("G#") || note2.equals("Ab"))) {
+         note2_val = 8;
+         }
+      if (note2.equals("A")) {
+         note2_val = 9;
+         }
+      if ((note2.equals("A#")) || (note2.equals("Bb"))) {
+         note2_val = 10;
+         }
+      if ((note2.equals("B")) || (note2.equals("Cb"))) {
+         note2_val = 11;
+         }
+      
+      int difference1 = (note1_val - note2_val);
+      int difference2 = (note2_val - note1_val);
+      
+      
+      if (Math.abs(difference1) == 0) {
+         System.out.print("Unison");
+         }  
+      if (Math.abs(difference1) == 1) {
+         System.out.print("Minor 2nd");
+         }
+      if (Math.abs(difference1) == 2) {
+         System.out.print("Major 2nd");
+         }
+      if (Math.abs(difference1) == 3) {
+         System.out.print("Minor 3rd");
+         }
+      if (Math.abs(difference1) == 4) {
+         System.out.print("Major 3rd");
+         }
+      if (Math.abs(difference1) == 5) {
+         System.out.print("Perfect 4th");
+         }
+      if (Math.abs(difference1) == 6) {
+         System.out.print("Tritone");
+         }
+      if (Math.abs(difference1) == 7) {
+         System.out.print("Perfect 5th");
+         }
+      if (Math.abs(difference1) == 8) {
+         System.out.print("Minor 6th");
+         }
+      if (Math.abs(difference1) == 9) {
+         System.out.print("Major 6th");
+         }
+      if (Math.abs(difference1) == 10) {
+         System.out.print("Minor 7th");
+         }
+      if (Math.abs(difference1) == 11) {
+         System.out.print("Major 7th");
+         }
+      if (Math.abs(difference1) == 12) {
+         System.out.print("Octave");
+         }
+       }
+    }
